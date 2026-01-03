@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Understand">
         <activity
+            android:name=".processkill.OnSaveInstanceActivity"
+            android:exported="false" />
+        <activity
             android:name=".SavingStateConfigAndProcessDeath"
             android:exported="false" />
         <activity
