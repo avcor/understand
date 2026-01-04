@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.understand.fragment.FragmentLifecycleActivity
 import com.example.understand.processkill.OnSaveInstanceActivity
 import com.example.understand.task.A
 import com.example.understand.ui.theme.MyTheme
@@ -54,6 +55,13 @@ fun HomeScreen() {
                 activityContext?.startActivity(i)
             }) {
                 Text("Task Recreation")
+            }
+
+            Button(onClick = {
+                val i = Intent(activityContext, FragmentLifecycleActivity::class.java)
+                activityContext?.startActivity(i)
+            }) {
+                Text("Fragment lifecycle")
             }
         }
     }
